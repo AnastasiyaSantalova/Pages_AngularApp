@@ -37,4 +37,11 @@ export class AppComponent {
       url: 'https://images.pexels.com/photos/210205/pexels-photo-210205.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
     },
   ];
+
+  isDisplayingIndex(index: number): boolean {
+    if (this.currentPage + 5 <= this.images.length) {
+      return index >= this.currentPage && index < this.currentPage + 5;
+    }
+    return index >= this.images.length - 5;
+  }
 }
