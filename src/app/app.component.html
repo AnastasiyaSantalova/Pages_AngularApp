@@ -18,7 +18,7 @@
   </ul>
 </nav>
 
-<div>
-  <h2>{{ images[currentPage].title }}</h2>
+<div class="image-box">
+  <h2 [appClass]="'blue'">{{ images[currentPage].title }}</h2>
   <img [src]="images[currentPage].url" [alt]="images[currentPage].title">
 </div>

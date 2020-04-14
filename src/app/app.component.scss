@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.image-box {
+  width: 500px;
+  img {
+    width: 100%;
+  }
+}
